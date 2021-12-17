@@ -1,0 +1,23 @@
+.content-wrap{
+    max-width: 900px;
+    width: 80%;
+    margin:0 auto;
+    padding:60px 0;
+    /* width affects the width of the element */
+    /* margin is like padding, but is between elements */
+    /* max-width with a percentage value, will make the view relative to the container.  When the width is lesser than themax-width value, the 
+    content will span at 80% of the full page.*/
+}
+.item-details h3 + p {
+    font-style:italic;
+}
+.item-details h3 ~ p {
+    margin: 0;
+}
+.job-item{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+    
+    /* sets out the explicit template as to how the grid may look */
+}
